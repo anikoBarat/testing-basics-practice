@@ -1,5 +1,6 @@
 public class BasicCalculator implements Calculator {
 
+
     @Override
     public int add(int a, int b) {
         return a + b;
@@ -17,7 +18,7 @@ public class BasicCalculator implements Calculator {
         if(b == 0){
             throw new IllegalArgumentException("Division with 0 isn't a valid operation!");
         }
-        return a / b;
+        return (float) a / b;
     }
 
 
